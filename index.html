@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BIOVERSE | Human Body Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">🧬 BIOVERSE</div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#modules">Explore</a>
+        <a href="#simulation">Simulator</a>
+        <a href="#quiz">Quiz</a>
+    </div>
+
+    <a href="#modules" class="nav-btn">Get Started ↗</a>
+</nav>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="tag">✦ BIOLOGY MEETS TECHNOLOGY</span>
+
+        <h1>
+            Discover the<br>
+            <span>Human Body.</span>
+        </h1>
+
+        <p>
+            Explore the incredible human body through interactive
+            biological simulations, scientific discoveries and
+            immersive learning experiences.
+        </p>
+
+        <div class="hero-buttons">
+            <button onclick="explore()">Explore Universe ↗</button>
+            <a href="#simulation" class="secondary-btn">View Simulations</a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <h2>03+</h2>
+                <p>Simulations</p>
+            </div>
+
+            <div>
+                <h2>06+</h2>
+                <p>Body Processes</p>
+            </div>
+
+            <div>
+                <h2>100%</h2>
+                <p>Interactive Learning</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="human-visual">
+            🧍
+        </div>
+
+        <div class="floating-card card-one">
+            ❤️ Heart
+            <small>Circulatory System</small>
+        </div>
+
+        <div class="floating-card card-two">
+            🫁 Lungs
+            <small>Respiratory System</small>
+        </div>
+
+        <div class="floating-card card-three">
+            🧠 Brain
+            <small>Nervous System</small>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="intro section-padding">
+
+    <span class="tag">ABOUT BIOVERSE</span>
+
+    <h2>Science becomes an experience.</h2>
+
+    <p>
+        BIOVERSE is an interactive educational platform designed
+        to explain the amazing functions of the human body through
+        digital simulations and visual learning.
+    </p>
+
+</section>
+
+
+<section id="modules" class="section-padding">
+
+    <div class="section-heading">
+        <span class="tag">EXPLORE THE HUMAN BODY</span>
+        <h2>Biological Systems</h2>
+        <p>Select a system to discover how your body works.</p>
+    </div>
+
+    <div class="module-grid">
+
+        <div class="module-card">
+            <div class="module-icon">❤️</div>
+            <span class="module-number">01 / CIRCULATORY</span>
+            <h3>Heart Simulation</h3>
+            <p>Discover how the heart pumps blood throughout the body.</p>
+            <button onclick="openSimulation('heart')">Explore Heart ↗</button>
+        </div>
+
+        <div class="module-card">
+            <div class="module-icon">🫁</div>
+            <span class="module-number">02 / RESPIRATORY</span>
+            <h3>Lungs Simulation</h3>
+            <p>Understand inhalation, exhalation and gas exchange.</p>
+            <button onclick="openSimulation('lungs')">Explore Lungs ↗</button>
+        </div>
+
+        <div class="module-card">
+            <div class="module-icon">🥗</div>
+            <span class="module-number">03 / DIGESTIVE</span>
+            <h3>Digestive System</h3>
+            <p>Follow the journey of food through the digestive tract.</p>
+            <button onclick="openSimulation('digestive')">Explore Digestion ↗</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="simulation" class="simulation-section section-padding">
+
+    <div class="section-heading">
+        <span class="tag">INTERACTIVE LABORATORY</span>
+        <h2>Experience the Science</h2>
+        <p>Run simulations and understand biological processes.</p>
+    </div>
+
+    <div class="simulator-box">
+
+        <div class="sim-header">
+            <div>
+                <span class="live-dot"></span>
+                INTERACTIVE SIMULATOR
+            </div>
+
+            <span>EDUCATIONAL MODE</span>
+        </div>
+
+        <h2 id="simTitle">Welcome to the Biology Lab</h2>
+
+        <div id="simContent">
+            <div class="welcome-icon">🔬</div>
+            <p>Select a biological system above to begin your simulation.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="facts-section section-padding">
+
+    <div class="section-heading">
+        <span class="tag">DID YOU KNOW?</span>
+        <h2>Amazing Human Body Facts</h2>
+    </div>
+
+    <div class="facts-grid">
+
+        <div class="fact-card">
+            <h2>❤️</h2>
+            <h3>The Human Heart</h3>
+            <p>The heart continuously pumps blood throughout the body.</p>
+        </div>
+
+        <div class="fact-card">
+            <h2>🧠</h2>
+            <h3>The Human Brain</h3>
+            <p>The brain coordinates movement, memory and many body functions.</p>
+        </div>
+
+        <div class="fact-card">
+            <h2>🫁</h2>
+            <h3>The Human Lungs</h3>
+            <p>The lungs exchange oxygen and carbon dioxide during breathing.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="quiz" class="quiz-section section-padding">
+
+    <span class="tag">TEST YOUR KNOWLEDGE</span>
+
+    <h2>Biology Knowledge Challenge</h2>
+
+    <p>Answer questions and test what you have learned.</p>
+
+    <div class="quiz-box">
+
+        <h3 id="question">Which organ pumps blood throughout the body?</h3>
+
+        <div id="answers" class="answers"></div>
+
+        <p id="quizResult"></p>
+
+        <button id="nextQuestion" onclick="nextQuiz()" style="display:none">
+            Next Question →
+        </button>
+
+        <p id="score"></p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">🧬 BIOVERSE</div>
+
+    <p>Where Biology Meets Computer Science.</p>
+
+    <p class="copyright">
+        © 2026 BIOVERSE | Educational Human Body Simulation Project
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
